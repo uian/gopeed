@@ -1,0 +1,17 @@
+{
+  "name": "Your Project Name",
+  "build": {
+    "dockerfile": "Dockerfile"
+  },
+  "runArgs": [
+    "-u",
+    "root"
+  ],
+  "settings": {
+    "terminal.integrated.shell.linux": "/bin/bash"
+  },
+  "forwardPorts": [
+    9999
+  ],
+  "postCreateCommand": "bash ./entrypoint.sh"
+}
