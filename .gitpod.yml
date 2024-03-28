@@ -1,0 +1,9 @@
+image:
+  file: Dockerfile
+
+tasks:
+  - init: echo 'Workspace ready to use.'
+
+ports:
+  - port: 9999
+    onOpen: open-preview
